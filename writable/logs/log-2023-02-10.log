@@ -1,0 +1,147 @@
+CRITICAL - 2023-02-10 02:19:12 --> syntax error, unexpected token "if"
+in APPPATH\Config\Routes.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 02:19:19 --> syntax error, unexpected token "if"
+in APPPATH\Config\Routes.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 02:29:09 --> Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('FCPATH\\index.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\Home.php(113): view('index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 03:48:11 --> require_once(C:\wamp64\www\matt\app\Controllers/../Classes/PHPExcel/IOFactory.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 8.
+ 1 APPPATH\Controllers\Home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\wamp64\\www\\matt\\app\\Controllers/../Classes/PHPExcel/IOFactory.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Home.php', 8)
+ 2 APPPATH\Controllers\Home.php(8): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('APPPATH\\Controllers\\Home.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 7 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 17:24:39 --> require_once(C:\wamp64\www\matt\app\Controllers/../Classes/PHPExcel/IOFactory.php): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Home.php on line 8.
+ 1 APPPATH\Controllers\Home.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\wamp64\\www\\matt\\app\\Controllers/../Classes/PHPExcel/IOFactory.php): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Home.php', 8)
+ 2 APPPATH\Controllers\Home.php(8): require_once()
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once('APPPATH\\Controllers\\Home.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 7 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 8 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 22:45:48 --> Undefined property: App\Controllers\Home::$userModel
+in APPPATH\Controllers\Home.php on line 127.
+ 1 APPPATH\Controllers\Home.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$userModel', 'APPPATH\\Controllers\\Home.php', 127)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 22:55:41 --> Undefined property: App\Controllers\Home::$userModel
+in APPPATH\Controllers\Home.php on line 145.
+ 1 APPPATH\Controllers\Home.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$userModel', 'APPPATH\\Controllers\\Home.php', 145)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 22:57:07 --> Class "App\Controllers\UserInfoModel" not found
+in APPPATH\Controllers\Home.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 22:57:45 --> Class "App\Controllers\UserInfoModel" not found
+in APPPATH\Controllers\Home.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 22:58:01 --> Class "App\Controllers\UserInfoModel" not found
+in APPPATH\Controllers\Home.php on line 110.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 22:59:00 --> Class "App\Models\UserInfoModel" not found
+in APPPATH\Controllers\Home.php on line 111.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 22:59:48 --> Undefined property: App\Controllers\Home::$UserInfoModel
+in APPPATH\Controllers\Home.php on line 147.
+ 1 APPPATH\Controllers\Home.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$UserInfoModel', 'APPPATH\\Controllers\\Home.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 23:02:02 --> Undefined property: App\Controllers\Home::$db
+in APPPATH\Controllers\Home.php on line 147.
+ 1 APPPATH\Controllers\Home.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$db', 'APPPATH\\Controllers\\Home.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 23:07:13 --> Undefined variable $builder
+in APPPATH\Controllers\Home.php on line 147.
+ 1 APPPATH\Controllers\Home.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', 'APPPATH\\Controllers\\Home.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 23:08:04 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 149.
+ 1 APPPATH\Controllers\Home.php(149): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\Home.php', 149)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-10 23:08:27 --> mysqli_sql_exception: Table 'matt.user_info' doesn't exist in C:\wamp64\www\matt\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\matt\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\wamp64\www\matt\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\wamp64\www\matt\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\wamp64\www\matt\system\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', NULL, false)
+#4 C:\wamp64\www\matt\system\Database\BaseBuilder.php(2178): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\wamp64\www\matt\app\Controllers\Home.php(149): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\wamp64\www\matt\system\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+#7 C:\wamp64\www\matt\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\wamp64\www\matt\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\matt\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-10 23:08:27 --> Table 'matt.user_info' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('INSERT INTO `user_info` (`Date`, `Department_code`, `Description`, `G_Id`, `Name`, `istrue`)
+VALUES (112714546,\'full workout, Toxicology, blood screening\',102334,\'Agile Soft\',\'James Mokgosi\',\'01/02/2023\'), (455625667,\'Toxicology, blood screen, glucose\',345667,\'Gam\',\'Kabo Motse\',\'29/11/2022\'), (235326678,\'renal , x-ray, blood pressure\',667358,\'Propex\',\'Thato Kaone\',\'30/10/2022\'), (455716721,\'cardio, heart & lung function, renal, hearing and vision\',345601,\'Gam\',\'Gopolang Kebu\',\'28/01/2023\'), (376822567,\'blood pressure, blood  sugar\',3456691,\'Gam\',\'Dimpho Kgabo\',\'09/01/2023\'), (549817789,\'hearing and sight\',102320,\'Agile soft\',\'Tshidi Kabo\',\'03/08/2022\')', null, false)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2178): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 3 APPPATH\Controllers\Home.php(149): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 23:09:03 --> Call to undefined function App\Controllers\showSuccessMessage()
+in APPPATH\Controllers\Home.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 23:17:05 --> Call to a member function isValid() on null
+in APPPATH\Controllers\Home.php on line 165.
+ 1 APPPATH\Controllers\Home.php(117): App\Controllers\Home->uploadFile('FCPATH\\documents\\users', null)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->importCsvToDb()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

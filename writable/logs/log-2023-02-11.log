@@ -1,0 +1,417 @@
+CRITICAL - 2023-02-11 02:21:28 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\Home.php on line 117.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-11 02:45:03 --> mysqli_sql_exception: Not unique table/alias: 'group_name' in C:\wamp64\www\matt\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\matt\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\matt\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\matt\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\matt\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\matt\app\Controllers\Home.php(113): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\matt\system\CodeIgniter.php(934): App\Controllers\Home->department()
+#6 C:\wamp64\www\matt\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\matt\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\matt\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-11 02:45:03 --> Not unique table/alias: 'group_name'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `group_name`, `group_name`', [], false)
+ 2 APPPATH\Controllers\Home.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 02:47:07 --> Undefined variable $builder
+in APPPATH\Controllers\Home.php on line 111.
+ 1 APPPATH\Controllers\Home.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builder', 'APPPATH\\Controllers\\Home.php', 111)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-11 02:47:25 --> mysqli_sql_exception: Not unique table/alias: 'group_name' in C:\wamp64\www\matt\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\matt\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\matt\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\matt\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\matt\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\matt\app\Controllers\Home.php(113): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\matt\system\CodeIgniter.php(934): App\Controllers\Home->department()
+#6 C:\wamp64\www\matt\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\matt\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\matt\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-11 02:47:25 --> Not unique table/alias: 'group_name'
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `group_name`, `group_name`', [], false)
+ 2 APPPATH\Controllers\Home.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 02:48:54 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\Database\MySQLi\Result given, called in C:\wamp64\www\matt\app\Controllers\Home.php on line 112
+in SYSTEMPATH\Common.php on line 1163.
+ 1 APPPATH\Controllers\Home.php(112): view('department', Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 02:50:12 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\Database\MySQLi\Result given, called in C:\wamp64\www\matt\app\Controllers\Home.php on line 113
+in SYSTEMPATH\Common.php on line 1163.
+ 1 APPPATH\Controllers\Home.php(113): view('department', Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 02:54:40 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\Database\MySQLi\Result given, called in C:\wamp64\www\matt\app\Controllers\Home.php on line 114
+in SYSTEMPATH\Common.php on line 1163.
+ 1 APPPATH\Controllers\Home.php(114): view('department', Object(CodeIgniter\Database\MySQLi\Result))
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 02:55:16 --> Undefined variable $query
+in APPPATH\Views\department.php on line 98.
+ 1 APPPATH\Views\department.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Views\\department.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\Home.php(114): view('department', [])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 02:56:15 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\Home.php on line 114.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 02:56:31 --> Undefined variable $query
+in APPPATH\Views\department.php on line 98.
+ 1 APPPATH\Views\department.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'APPPATH\\Views\\department.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\Home.php(114): view('department', [])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 02:57:05 --> Undefined variable $data
+in APPPATH\Views\department.php on line 98.
+ 1 APPPATH\Views\department.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\department.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\Home.php(114): view('department', [])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 02:58:40 --> Undefined variable $data
+in APPPATH\Views\department.php on line 98.
+ 1 APPPATH\Views\department.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\department.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\Home.php(114): view('department', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 02:59:16 --> Call to a member function getResultArray() on array
+in APPPATH\Controllers\Home.php on line 113.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 02:59:34 --> Undefined variable $data
+in APPPATH\Views\department.php on line 98.
+ 1 APPPATH\Views\department.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\department.php', 98)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\Home.php(114): view('department', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 03:14:37 --> Attempt to read property "name" on array
+in APPPATH\Views\department.php on line 122.
+ 1 APPPATH\Views\department.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'APPPATH\\Views\\department.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\Home.php(115): view('department', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 03:15:07 --> Undefined array key "name"
+in APPPATH\Views\department.php on line 122.
+ 1 APPPATH\Views\department.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'APPPATH\\Views\\department.php', 122)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\Home.php(115): view('department', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 03:59:18 --> Undefined array key "'Name'"
+in APPPATH\Views\department.php on line 123.
+ 1 APPPATH\Views\department.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "\'Name\'"', 'APPPATH\\Views\\department.php', 123)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\department.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('department', [], true)
+ 5 APPPATH\Controllers\Home.php(115): view('department', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->department()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 04:53:53 --> view(): Argument #2 ($data) must be of type array, string given, called in C:\wamp64\www\matt\app\Controllers\Home.php on line 105
+in SYSTEMPATH\Common.php on line 1163.
+ 1 APPPATH\Controllers\Home.php(105): view('upload', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->upload_excel('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 04:55:33 --> Undefined variable $ids
+in APPPATH\Views\upload.php on line 24.
+ 1 APPPATH\Views\upload.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ids', 'APPPATH\\Views\\upload.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\upload.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('upload', [], true)
+ 5 APPPATH\Controllers\Home.php(105): view('upload', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->upload_excel('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 04:58:13 --> syntax error, unexpected token "?"
+in APPPATH\Views\upload.php on line 32.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('upload', [], true)
+ 3 APPPATH\Controllers\Home.php(105): view('upload', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->upload_excel('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 04:58:48 --> syntax error, unexpected token "?"
+in APPPATH\Views\upload.php on line 32.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('upload', [], true)
+ 3 APPPATH\Controllers\Home.php(105): view('upload', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->upload_excel('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 05:00:29 --> syntax error, unexpected variable "$result", expecting ")"
+in APPPATH\Views\upload.php on line 32.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('upload', [], true)
+ 3 APPPATH\Controllers\Home.php(105): view('upload', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->upload_excel('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 05:01:37 --> syntax error, unexpected variable "$result", expecting ")"
+in APPPATH\Views\upload.php on line 32.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('upload', [], true)
+ 3 APPPATH\Controllers\Home.php(105): view('upload', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->upload_excel('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 05:02:52 --> syntax error, unexpected string content ");?>" method="post" enctype="m...", expecting ")"
+in APPPATH\Views\upload.php on line 32.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('upload', [], true)
+ 3 APPPATH\Controllers\Home.php(105): view('upload', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->upload_excel('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 05:53:52 --> Invalid file: "editgroupinfo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('editgroupinfo.php')
+ 2 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('editgroupinfo', [], true)
+ 3 APPPATH\Controllers\Home.php(126): view('editgroupinfo')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->edit_groupinfo('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 07:41:59 --> Undefined property: App\Controllers\Home::$db
+in APPPATH\Controllers\Home.php on line 131.
+ 1 APPPATH\Controllers\Home.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$db', 'APPPATH\\Controllers\\Home.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->edit_groupinfo('1')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-11 14:19:37 --> include(&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;UTF-8&quot;&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;link href='https://...@5.2.3/dist/css/bootstrap.min.css' rel='stylesheet'&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+	&lt;!-- Boxicons --&gt;
+	&lt;link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'&gt;
+	&lt;!-- My CSS --&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;../style/style.css&quot;&gt;
+
+	&lt;title&gt;Admin&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+
+	&lt;!-- SIDEBAR --&gt;
+	&lt;section id=&quot;sidebar&quot;&gt;
+		&lt;a href=&quot;#&quot; class=&quot;brand&quot;&gt;
+			&lt;!-- &lt;i class='bx bxs-smile'&gt;&lt;/i&gt; --&gt;
+			&lt;img src=&quot;../img/logo.png&quot; class=&quot;logo&quot; /&gt;
+			&lt;!-- &lt;span class=&quot;text&quot;&gt;Admin&lt;/span&gt; --&gt;
+		&lt;/a&gt;
+		&lt;ul class=&quot;side-menu top&quot;&gt;
+			&lt;li &gt;
+				&lt;a href=&quot;http://localhost/matt/public/dashboard&quot;&gt;
+					&lt;i class='bx bxs-dashboard' &gt;&lt;/i&gt;
+					&lt;span class=&quot;text&quot;&gt;Dashboard&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+			
+		&lt;/ul&gt;
+		&lt;ul class=&quot;side-menu&quot;&gt;
+			&lt;li class=&quot;active&quot;&gt;
+				&lt;a href=&quot;http://localhost/matt/public/add&quot;&gt;
+					&lt;i class='bx bxs-cog' &gt;&lt;/i&gt;
+					&lt;span class=&quot;text&quot;&gt;Group name&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		
+			&lt;li&gt;
+				&lt;a href=&quot;http://localhost/matt/public/logout&quot; class=&quot;logout&quot;&gt;
+					&lt;i class='bx bxs-log-out-circle' &gt;&lt;/i&gt;
+					&lt;span class=&quot;text&quot;&gt;Logout&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/section&gt;
+	&lt;!-- SIDEBAR --&gt;
+
+
+	&lt;!-- CONTENT --&gt;
+	&lt;section id=&quot;content&quot;&gt;
+		&lt;!-- NAVBAR --&gt;
+		&lt;nav&gt;
+			&lt;i class='bx bx-menu' &gt;&lt;/i&gt;
+			&lt;!-- &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Categories&lt;/a&gt; --&gt;
+			&lt;form action=&quot;#&quot;&gt;
+				&lt;div class=&quot;form-input&quot;&gt;
+					&lt;!-- &lt;input type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
+					&lt;button type=&quot;submit&quot; class=&quot;search-btn&quot;&gt;&lt;i class='bx bx-search' &gt;&lt;/i&gt;&lt;/button&gt; --&gt;
+				&lt;/div&gt;
+			&lt;/form&gt;
+			&lt;!-- &lt;input type=&quot;checkbox&quot; id=&quot;switch-mode&quot; hidden&gt;
+			&lt;label for=&quot;switch-mode&quot; class=&quot;switch-mode&quot;&gt;&lt;/label&gt;
+			&lt;a href=&quot;#&quot; class=&quot;notification&quot;&gt;
+				&lt;i class='bx bxs-bell' &gt;&lt;/i&gt;
+				&lt;span class=&quot;num&quot;&gt;8&lt;/span&gt;
+			&lt;/a&gt; --&gt;
+			&lt;a href=&quot;#&quot; class=&quot;profile&quot;&gt;
+				&lt;img src=&quot;../img/people.png&quot;&gt;
+			&lt;/a&gt;
+		&lt;/nav&gt;): Failed to open stream: Invalid argument
+in APPPATH\Controllers\Home.php on line 134.
+ 1 APPPATH\Controllers\Home.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;UTF-8&quot;&gt;
+	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;link href=\'https://...@5.2.3/dist/css/bootstrap.min.css\' rel=\'stylesheet\'&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+	&lt;!-- Boxicons --&gt;
+	&lt;link href=\'https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css\' rel=\'stylesheet\'&gt;
+	&lt;!-- My CSS --&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;../style/style.css&quot;&gt;
+
+	&lt;title&gt;Admin&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+
+	&lt;!-- SIDEBAR --&gt;
+	&lt;section id=&quot;sidebar&quot;&gt;
+		&lt;a href=&quot;#&quot; class=&quot;brand&quot;&gt;
+			&lt;!-- &lt;i class=\'bx bxs-smile\'&gt;&lt;/i&gt; --&gt;
+			&lt;img src=&quot;../img/logo.png&quot; class=&quot;logo&quot; /&gt;
+			&lt;!-- &lt;span class=&quot;text&quot;&gt;Admin&lt;/span&gt; --&gt;
+		&lt;/a&gt;
+		&lt;ul class=&quot;side-menu top&quot;&gt;
+			&lt;li &gt;
+				&lt;a href=&quot;http://localhost/matt/public/dashboard&quot;&gt;
+					&lt;i class=\'bx bxs-dashboard\' &gt;&lt;/i&gt;
+					&lt;span class=&quot;text&quot;&gt;Dashboard&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+			
+		&lt;/ul&gt;
+		&lt;ul class=&quot;side-menu&quot;&gt;
+			&lt;li class=&quot;active&quot;&gt;
+				&lt;a href=&quot;http://localhost/matt/public/add&quot;&gt;
+					&lt;i class=\'bx bxs-cog\' &gt;&lt;/i&gt;
+					&lt;span class=&quot;text&quot;&gt;Group name&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		
+			&lt;li&gt;
+				&lt;a href=&quot;http://localhost/matt/public/logout&quot; class=&quot;logout&quot;&gt;
+					&lt;i class=\'bx bxs-log-out-circle\' &gt;&lt;/i&gt;
+					&lt;span class=&quot;text&quot;&gt;Logout&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/section&gt;
+	&lt;!-- SIDEBAR --&gt;
+
+
+	&lt;!-- CONTENT --&gt;
+	&lt;section id=&quot;content&quot;&gt;
+		&lt;!-- NAVBAR --&gt;
+		&lt;nav&gt;
+			&lt;i class=\'bx bx-menu\' &gt;&lt;/i&gt;
+			&lt;!-- &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Categories&lt;/a&gt; --&gt;
+			&lt;form action=&quot;#&quot;&gt;
+				&lt;div class=&quot;form-input&quot;&gt;
+					&lt;!-- &lt;input type=&quot;search&quot; placeholder=&quot;Search...&quot;&gt;
+					&lt;button type=&quot;submit&quot; class=&quot;search-btn&quot;&gt;&lt;i class=\'bx bx-search\' &gt;&lt;/i&gt;&lt;/button&gt; --&gt;
+				&lt;/div&gt;
+			&lt;/form&gt;
+			&lt;!-- &lt;input type=&quot;checkbox&quot; id=&quot;switch-mode&quot; hidden&gt;
+			&lt;label for=&quot;switch-mode&quot; class=&quot;switch-mode&quot;&gt;&lt;/label&gt;
+			&lt;a href=&quot;#&quot; class=&quot;notification&quot;&gt;
+				&lt;i class=\'bx bxs-bell\' &gt;&lt;/i&gt;
+				&lt;span class=&quot;num&quot;&gt;8&lt;/span&gt;
+			&lt;/a&gt; --&gt;
+			&lt;a href=&quot;#&quot; class=&quot;profile&quot;&gt;
+				&lt;img src=&quot;../img/people.png&quot;&gt;
+			&lt;/a&gt;
+		&lt;/nav&gt;): Failed to open stream: Invalid argument', 'APPPATH\\Controllers\\Home.php', 134)
+ 2 APPPATH\Controllers\Home.php(134): include()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->edit_groupinfo('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
